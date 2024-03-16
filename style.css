@@ -1,0 +1,73 @@
+#result.correct {
+    color: green;
+    font-weight: bold;
+}
+
+#result.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+#submit, #navigation-buttons {
+    display: block; /* Ensure these elements are treated as block elements */
+    text-align: center; /* Center the text/content inside these elements */
+    margin: 20px auto; /* Center the elements horizontally */
+}
+
+.button {
+    display: inline-block; /* Display buttons inline but allow block properties */
+    padding: 10px 20px; /* Add padding for a better click area and appearance */
+    font-size: 18px; /* Font size for readability */
+    cursor: pointer; /* Indicate that the element is clickable */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #ccc; /* Add a subtle border */
+    margin: 0 10px; /* Space out buttons */
+}
+
+#prev, #next {
+    font-size: 24px; /* Larger font size for the arrows */
+    border: none; /* No border for arrow buttons */
+    background: none; /* No background for a cleaner look */
+}
+
+
+#result, #reason {
+    text-align: center; /* Center-align the text */
+    font-size: 18px; /* Increase the font size */
+    clear: both; /* Clear the float to ensure alignment */
+    padding: 10px 0; /* Add some padding for spacing */
+}
+
+#question {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px; /* Add some space between the question and options */
+}
+
+#options {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto; /* Center the options */
+    width: fit-content; /* Adjust width to fit the content */
+}
+
+.option {
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+}
+
+/* Style for radio buttons and labels when selected/deselected */
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold; /* Highlight selected option */
+}
