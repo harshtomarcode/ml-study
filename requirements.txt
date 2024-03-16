@@ -1,0 +1,3 @@
+pdfminer.six[image]
+pandas==2.2.1
+google-generativeai
