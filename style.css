@@ -71,3 +71,8 @@ input[type="radio"] + label {
 input[type="radio"]:checked + label {
     font-weight: bold; /* Highlight selected option */
 }
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}

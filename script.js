@@ -4,7 +4,10 @@ let questions = [];
 let selectedOption = null; // Track the user's current selection
 let attempts = 0; // Track the number of attempts
 
-
+// Add darkmode function
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
 
 function shuffleQuestions(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -116,6 +119,8 @@ document.getElementById('prev').addEventListener('click', () => {
         displayQuestion();
     }
 });
+
+document.getElementById('dark-mode-button').addEventListener('click', toggleDarkMode);
 
 // Load the questions
 loadQuestions();
